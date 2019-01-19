@@ -1,0 +1,26 @@
+$foo: red; // variable
+
+// inheritance
+%bkgd {
+    padding: 20px 10px;
+}
+
+h1, h2 {
+    color: $foo;
+}
+.header {
+    @extend %bkgd;
+    overflow: hidden;
+    background-color: #ff0000;
+    
+    .logo {
+        color: yellow;
+        font: helvetica;
+        font-size: 20px;
+    }
+
+    .header-right {
+        float: right;
+        color: white;
+    }
+}

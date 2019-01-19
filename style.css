@@ -1,0 +1,23 @@
+.header {
+  padding: 20px 10px;
+}
+
+h1, h2 {
+  color: red;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #ff0000;
+}
+.header .logo {
+  color: yellow;
+  font: helvetica;
+  font-size: 20px;
+}
+.header .header-right {
+  float: right;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
