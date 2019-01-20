@@ -9,11 +9,11 @@ app = Flask(__name__)
 app.config['SESSION_FILE_DIR'] = mkdtemp()
 app.config['SESSION_PERMANENT'] = False
 app.config['SESSION_TYPE'] = 'filesystem'
+app.debug=True # added
 Session(app)
 
 @app.route('/')
 def index():
-
     if 'board' not in session:
         session['board'] = [[None, None, None], [None, None, None], [None, None, None]]
         session['turn'] = 'X'
